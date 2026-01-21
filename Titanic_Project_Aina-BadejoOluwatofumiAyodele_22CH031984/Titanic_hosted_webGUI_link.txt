@@ -1,0 +1,6 @@
+Name: Aina-Badejo Oluwatofunmi Ayodele
+Matric Number: 22CH031984 
+Machine Learning Algorithm Used: Random Forest Classifier
+Model persistence method used: Pickle
+Live URL of the hosted application:
+GitHub repository link: 

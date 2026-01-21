@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Titanic Survival Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="box">
+    <h2>Titanic Survival Prediction</h2>
+
+    <form action="/predict" method="post">
+
+        <!-- Pclass -->
+        <label>Passenger Class</label>
+        <select name="Pclass" required>
+            <option value="1">1 (Upper)</option>
+            <option value="2">2 (Middle)</option>
+            <option value="3" selected>3 (Lower)</option>
+        </select>
+
+        <!-- Sex -->
+        <label>Sex</label>
+        <select name="Sex" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <!-- Age -->
+        <label>Age</label>
+        <input type="number" name="Age" min="0" step="0.1" placeholder="e.g. 28" required>
+
+        <!-- SibSp -->
+        <label>Number of Siblings/Spouses Aboard</label>
+        <input type="number" name="SibSp" min="0" max="10" value="0" required>
+
+        <!-- Embarked -->
+        <label>Port of Embarkation</label>
+        <select name="Embarked" required>
+            <option value="C">Cherbourg (C)</option>
+            <option value="Q">Queenstown (Q)</option>
+            <option value="S" selected>Southampton (S)</option>
+        </select>
+
+        <button type="submit">Predict Survival</button>
+    </form>
+
+    {% if prediction %}
+        <h3>Prediction: {{ prediction }}</h3>
+    {% endif %}
+</div>
+
+</body>
+</html>
