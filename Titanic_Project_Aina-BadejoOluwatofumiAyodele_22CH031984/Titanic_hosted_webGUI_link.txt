@@ -2,5 +2,5 @@ Name: Aina-Badejo Oluwatofunmi Ayodele
 Matric Number: 22CH031984 
 Machine Learning Algorithm Used: Random Forest Classifier
 Model persistence method used: Pickle
-Live URL of the hosted application:
-GitHub repository link: 
+Live URL of the hosted application:https://titanic-project-aina.onrender.com/predict
+GitHub repository link: https://github.com/Tofunmi-code11gk/Titanic_Project_Aina-BadejoOluwatofumiAyodele_22CH031984
